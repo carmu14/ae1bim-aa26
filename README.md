@@ -22,6 +22,7 @@ Autor: Carlos Muñoz
 
 ```bash
 python -m venv .venv
-.venv\Scripts\activate
+source .venv\Scripts\activate
+python -m pip install SQLAlchemy
 pip install -r requirements.txt
 

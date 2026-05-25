@@ -40,7 +40,7 @@ def poblar_base():
         )
 
         # Creacion de carreras asociadas a su respectiva facultad.
-        print("Creando objetos de tipo carreras...")
+        print("Creando objetos de tipo Carrera...")
         software = Carrera(
             nombre="Tecnologias de la Información",
             codigo_interno="TIN-001",
@@ -82,34 +82,48 @@ def poblar_base():
             carrera=software,
         )
         profesor_2 = Profesor(
+            nombres="Anibal Alejandro",
+            apellidos="Danse Vaca",
+            correo="anibal_danse@universidad.edu.ec",
+            especialidad="Programación",
+            carrera=software,
+        )
+        profesor_3 = Profesor(
             nombres="Maria Cecilia",
             apellidos="Torres",
             correo="maria_torres@universidad.edu.ec",
             especialidad="Base de Datos",
             carrera=redes,
         )
-        profesor_3 = Profesor(
+        profesor_4 = Profesor(
+            nombres="Lupe Rosaura",
+            apellidos="Espinoza Torres",
+            correo="lupe_espinoza@universidad.edu.ec",
+            especialidad="Infraestructura",
+            carrera=redes,
+        )
+        profesor_5 = Profesor(
             nombres="Mariana Isabel",
             apellidos="Ortega Ruiz",
             correo="mariana_ortega@universidad.edu.ec",
             especialidad="Minería",
             carrera=ambiental,
         )
-        profesor_4 = Profesor(
+        profesor_6 = Profesor(
             nombres="Paul Leonardo",
             apellidos="Calle Riofrio",
             correo="paul_calle@universidad.edu.ec.ec",
             especialidad="Logística y Transporte",
             carrera=riesgos,
         )
-        profesor_5 = Profesor(
+        profesor_7 = Profesor(
             nombres="Javier Ricardo",
             apellidos="Salinas Mora",
             correo="javier_salinas@universidad.edu.ec",
             especialidad="Gestión en Contabilidad",
             carrera=contabilidad,
         )
-        profesor_6 = Profesor(
+        profesor_8 = Profesor(
             nombres="María José",
             apellidos="Guevara Tapia",
             correo="maria_guevara@universidad.edu.ec",
@@ -128,101 +142,133 @@ def poblar_base():
             profesor=profesor_1,
         )
         recurso_2 = RecursoAcademico(
-            titulo="Guía de programación orientada a objetos",
-            fecha_publicacion=date(2026, 10, 1),
-            tipo="Guía",
-            clasificacion="Desarrollo Web",
-            url="https://recursos.universidad.edu.ec/programacion_objetos",
+            titulo="Caso de estudio de algoritmos",
+            fecha_publicacion=date(2023, 3, 15),
+            tipo="Caso de estudio",
+            clasificacion="Clasifica DW2",
+            url="https://recursos.universidad.edu.ec/recurso_dw02",
             profesor=profesor_1,
         )
         recurso_3 = RecursoAcademico(
+            titulo="Video resumen de generación de algoritmos",
+            fecha_publicacion=date(2022, 3, 15),
+            tipo="Video",
+            clasificacion="Clasifica RIF01",
+            url="https://recursos.universidad.edu.ec/recurso_rif02",
+            profesor=profesor_2,
+        )
+        recurso_4 = RecursoAcademico(
+            titulo="Guía de programación orientada a objetos",
+            fecha_publicacion=date(2026, 10, 1),
+            tipo="Guía",
+            clasificacion="Clasifica RIF02",
+            url="https://recursos.universidad.edu.ec/recurso_rif03",
+            profesor=profesor_2,
+        )
+        recurso_5 = RecursoAcademico(
             titulo="Practica de normalizacion de bases de datos",
             fecha_publicacion=date(2023, 5, 8),
             tipo="Practica",
             clasificacion="Bases de datos",
             url="https://recursos.universidad.edu.ec/normalizacion-practica",
-            profesor=profesor_2,
+            profesor=profesor_3,
         )
-        recurso_4 = RecursoAcademico(
+        recurso_6 = RecursoAcademico(
             titulo="Guía de bases de datos no relacionales",
             fecha_publicacion=date(2023, 5, 9),
             tipo="Guía",
             clasificacion="Bases de Datos",
             url="https://recursos.universidad.edu.ec/guia_nosql",
-            profesor=profesor_2,
+            profesor=profesor_3,
         )
-        recurso_5 = RecursoAcademico(
+        recurso_7 = RecursoAcademico(
             titulo="Video informativo",
             fecha_publicacion=date(2026, 4, 20),
             tipo="Video",
             clasificacion="Clasifi 1",
             url="https://recursos.universidad.edu.ec/recurso1",
-            profesor=profesor_3,
+            profesor=profesor_4,
         )
-        recurso_6 = RecursoAcademico(
+        recurso_8 = RecursoAcademico(
             titulo="Caso de estudio de planificacion estrategica",
             fecha_publicacion=date(2026, 3, 15),
             tipo="Caso de estudio",
             clasificacion="Clasifi 2",
             url="https://recursos.universidad.edu.ec/recurso2",
-            profesor=profesor_3,
-        )
-        recurso_7 = RecursoAcademico(
-            titulo="Guía de contenidos",
-            fecha_publicacion=date(2026, 4, 20),
-            tipo="Guía",
-            clasificacion="Clasif Riesgos",
-            url="https://recursos.universidad.edu.ec/recursos_grd01",
-            profesor=profesor_4,
-        )
-        recurso_8 = RecursoAcademico(
-            titulo="Caso de estudio",
-            fecha_publicacion=date(2026, 3, 15),
-            tipo="Caso de estudio",
-            clasificacion="Clasif Riesgos",
-            url="https://recursos.universidad.edu.ec/recursos_grd02",
             profesor=profesor_4,
         )
         recurso_9 = RecursoAcademico(
-            titulo="Video sobre recursos didacticos",
-            fecha_publicacion=date(2026, 5, 20),
-            tipo="Video",
-            clasificacion="Clasifica CA01",
-            url="https://recursos.universidad.edu.ec/recurso_ca01",
+            titulo="Guía de contenidos",
+            fecha_publicacion=date(2026, 4, 20),
+            tipo="Guía",
+            clasificacion="Clasif MIN001",
+            url="https://recursos.universidad.edu.ec/recursos_grd01",
             profesor=profesor_5,
         )
         recurso_10 = RecursoAcademico(
-            titulo="Caso de estudio de planificacion estrategica",
-            fecha_publicacion=date(2026, 5, 15),
+            titulo="Caso de estudio de suelos",
+            fecha_publicacion=date(2026, 3, 15),
             tipo="Caso de estudio",
-            clasificacion="Clasifica CA02",
-            url="https://recursos.universidad.edu.ec/recurso_ca02",
+            clasificacion="Clasif MIN002",
+            url="https://recursos.universidad.edu.ec/recursos_grd02",
             profesor=profesor_5,
         )
         recurso_11 = RecursoAcademico(
-            titulo="Guía Didactica planificacción económica",
-            fecha_publicacion=date(2025, 4, 20),
-            tipo="Guía",
-            clasificacion="Clasifica ECO01",
-            url="https://recursos.universidad.edu.ec/recurso_econ01",
+            titulo="Video sobre recursos didacticos",
+            fecha_publicacion=date(2026, 5, 20),
+            tipo="Video",
+            clasificacion="Clasifica LT01",
+            url="https://recursos.universidad.edu.ec/recurso_lt01",
             profesor=profesor_6,
         )
         recurso_12 = RecursoAcademico(
+            titulo="Caso de estudio de planificacion estrategica",
+            fecha_publicacion=date(2026, 5, 15),
+            tipo="Caso de estudio",
+            clasificacion="Clasifica LT02",
+            url="https://recursos.universidad.edu.ec/recurso_lt02",
+            profesor=profesor_6,
+        )
+        recurso_13 = RecursoAcademico(
+            titulo="Caso de estudio de impuestos ecuador",
+            fecha_publicacion=date(2025, 4, 20),
+            tipo="Caso de estudio",
+            clasificacion="Clasifica CAO01",
+            url="https://recursos.universidad.edu.ec/recurso_ca01",
+            profesor=profesor_7,
+        )
+        recurso_14 = RecursoAcademico(
+            titulo="Guia didactica contabilidad",
+            fecha_publicacion=date(2024, 3, 15),
+            tipo="Guía",
+            clasificacion="Clasifica CAO02",
+            url="https://recursos.universidad.edu.ec/recurso_ca02",
+            profesor=profesor_7,
+        )
+        recurso_15 = RecursoAcademico(
+            titulo="Guía Didactica planificacción de la materia",
+            fecha_publicacion=date(2025, 4, 20),
+            tipo="Guía",
+            clasificacion="Clasifica ECO01",
+            url="https://recursos.universidad.edu.ec/recurso_eco01",
+            profesor=profesor_8,
+        )
+        recurso_16 = RecursoAcademico(
             titulo="Caso de estudio de economias globales",
             fecha_publicacion=date(2024, 3, 15),
             tipo="Caso de estudio",
             clasificacion="Clasifica ECO02",
             url="https://recursos.universidad.edu.ec/recurso_econ02",
-            profesor=profesor_6,
-        )
+            profesor=profesor_8,
+        )        
 
         #Se usa add_all para agregar todos los objetos a las sesión
         print("Guardando los objetos relacionados en la base de datos...")
         session.add_all([ingenieria, ciencias, administrativas, 
                          software, redes, ambiental, riesgos, contabilidad, economia,
-                         profesor_1, profesor_2, profesor_3, profesor_4, profesor_5, profesor_6,
-                         recurso_1, recurso_2, recurso_3, recurso_4, recurso_5, recurso_6, recurso_7, 
-                         recurso_8, recurso_9, recurso_10, recurso_11, recurso_12]
+                         profesor_1, profesor_2, profesor_3, profesor_4, profesor_5, profesor_6, profesor_7, profesor_8,
+                         recurso_1, recurso_2, recurso_3, recurso_4, recurso_5, recurso_6, recurso_7, recurso_8, recurso_9, 
+                         recurso_10, recurso_11, recurso_12, recurso_13, recurso_14, recurso_15, recurso_16]
                         )
         session.commit()
         print("Datos insertados correctamente.")

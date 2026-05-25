@@ -18,7 +18,7 @@ Autor: Carlos Muñoz
 - Un profesor puede crear muchos recursos académicos
 - Cada recurso académico pertenece obligatorio a un profesor.
 
-## Insralación
+## Instalación
 
 ```bash
 python -m venv .venv
